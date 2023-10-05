@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>INTERACTION PROGRAM SURVEY FORM</h1>
+
+  <form action="/submit" method="POST">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <input type="text" name="first_name" placeholder="First Name">
+      <input type="text" name="last_name" placeholder="Last Name">
+      <input type="email" name="email" placeholder="Email">
+    </fieldset>
+
+    <fieldset>
+      <legend>How was the lecture?</legend>
+      <input type="radio" name="question_1" value="1"> Good
+      <input type="radio" name="question_1" value="2"> Bad
+
+      <legend>Did the content was deliverd was actually good?</legend>
+      <input type="radio" name="question_2" value="1"> Yes
+      <input type="radio" name="question_2" value="2"> No
+
+      <legend>How was the clarity of  delivering the content?</legend>
+      <input type="radio" name="question_3" value="1"> Good
+      <input type="radio" name="question_3" value="2"> Bad
+
+    </fieldset>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
